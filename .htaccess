@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule api/user(.*)$ api/user.php?id=$1 [QSA,NC,L]
+
+RewriteRule api/login(.*)$ api/login.php? [QSA,NC,L]
